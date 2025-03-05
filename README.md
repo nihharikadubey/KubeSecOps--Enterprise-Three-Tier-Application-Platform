@@ -51,6 +51,28 @@ This project implements a comprehensive DevSecOps pipeline for a Three-Tier appl
 └──────────────────────────────────────────────────────────────────┘
 ```
 
+## Project Workflow
+```
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│   Developer     │     │    Jenkins      │     │     AWS         │
+│   Commits Code  │────▶│  CI/CD Pipeline │────▶│  Infrastructure │
+└─────────────────┘     └─────────────────┘     └─────────────────┘
+         │                       │                       │
+         │                       │                       │
+         │                       ▼                       ▼
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│   SonarQube     │     │     Docker      │     │      ECR        │
+│  Code Analysis  │◀────│     Build       │────▶│  Image Registry │
+└─────────────────┘     └─────────────────┘     └─────────────────┘
+         │                       │                       │
+         │                       │                       │
+         ▼                       ▼                       ▼
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│     Trivy       │     │     OWASP       │     │      EKS        │
+│ Security Scan   │     │ Dependency Check│     │    Deployment   │
+└─────────────────┘     └─────────────────┘     └─────────────────┘
+```
+![Project workflow](\assets\Three-Tier.gif)
 ## Detailed Technology Stack
 
 ### Infrastructure & Platform
