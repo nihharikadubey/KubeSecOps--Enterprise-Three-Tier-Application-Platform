@@ -73,7 +73,7 @@ This project implements a comprehensive DevSecOps pipeline for a Three-Tier appl
 └─────────────────┘     └─────────────────┘     └─────────────────┘
 ```
 
-![Project workflow](assets\Three-Tier.gif)
+![Project workflow](assets/Three-Tier.gif)
 
 ## Detailed Technology Stack
 
