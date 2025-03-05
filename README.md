@@ -72,7 +72,7 @@ This project implements a comprehensive DevSecOps pipeline for a Three-Tier appl
 │ Security Scan   │     │ Dependency Check│     │    Deployment   │
 └─────────────────┘     └─────────────────┘     └─────────────────┘
 ```
-![Project workflow](\assets\Three-Tier.gif)
+![Project workflow](assets\Three-Tier.gif)
 ## Detailed Technology Stack
 
 ### Infrastructure & Platform
